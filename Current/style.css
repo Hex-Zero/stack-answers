@@ -31,3 +31,7 @@ body {
 .dot.active {
   background-color: greenyellow;
 }
+
+.image-container {
+  display: inline;
+}

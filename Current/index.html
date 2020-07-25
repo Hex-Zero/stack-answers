@@ -10,23 +10,26 @@
     <section>
       <div role="list" class="banner__list w-dyn-items">
         <div
-          style="background: blue;"
-          role="listitem"
-          class="banner__item w-dyn- item mySlides"
-          onmouseover="currentSlide(1)"
-        ></div>
-        <div
-          style="background: black;"
-          role="listitem"
-          class="banner__item w-dyn-item mySlides"
-          onmouseover="currentSlide(2)"
-        ></div>
-        <div
-          style="background: red;"
-          role="listitem"
-          class="banner__item w-dyn-item mySlides"
-          onmouseover="currentSlide(3)"
-        ></div>
+          class="image-container"
+          onmouseenter="startSlideShow(true)"
+          onmouseleave="startSlideShow(false)"
+        >
+          <div
+            style="background: blue;"
+            role="listitem"
+            class="banner__item w-dyn- item mySlides"
+          ></div>
+          <div
+            style="background: black;"
+            role="listitem"
+            class="banner__item w-dyn-item mySlides"
+          ></div>
+          <div
+            style="background: red;"
+            role="listitem"
+            class="banner__item w-dyn-item mySlides"
+          ></div>
+        </div>
         <span class="dot" onmouseover="currentSlide(1)"></span>
         <span class="dot" onmouseover="currentSlide(2)"></span>
         <span class="dot" onmouseover="currentSlide(3)"></span>

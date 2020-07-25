@@ -9,6 +9,19 @@ function currentSlide(n) {
   showSlides((slideIndex = n));
 }
 
+var slideShowInterval;
+
+function startSlideShow(start) {
+  if (start) {
+    currentSlide((slideIndex += 1));
+    slideShowInterval = setInterval(function () {
+      currentSlide((slideIndex += 1));
+    }, 700);
+  } else {
+    clearInterval(slideShowInterval);
+  }
+}
+
 function showSlides(n) {
   var i;
   var slides = document.getElementsByClassName("mySlides");
