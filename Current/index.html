@@ -7,12 +7,31 @@
     <title>Answer</title>
   </head>
   <body>
-    <section></section>
+    <section>
+      <div role="list" class="banner__list w-dyn-items">
+        <div
+          style="background: blue;"
+          role="listitem"
+          class="banner__item w-dyn- item mySlides"
+          onmouseover="currentSlide(1)"
+        ></div>
+        <div
+          style="background: black;"
+          role="listitem"
+          class="banner__item w-dyn-item mySlides"
+          onmouseover="currentSlide(2)"
+        ></div>
+        <div
+          style="background: red;"
+          role="listitem"
+          class="banner__item w-dyn-item mySlides"
+          onmouseover="currentSlide(3)"
+        ></div>
+        <span class="dot" onmouseover="currentSlide(1)"></span>
+        <span class="dot" onmouseover="currentSlide(2)"></span>
+        <span class="dot" onmouseover="currentSlide(3)"></span>
+      </div>
+    </section>
   </body>
-  <script
-    src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-    integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs="
-    crossorigin="anonymous"
-  ></script>
   <script src="./Main.js" defer></script>
 </html>

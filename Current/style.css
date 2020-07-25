@@ -7,3 +7,27 @@
 body {
   background: antiquewhite;
 }
+
+.mySlides {
+  width: 15rem;
+  height: 15rem;
+}
+
+.dot {
+  background: black;
+  width: 3rem;
+  height: 3rem;
+  display: inline-block;
+}
+
+.dot:first-of-type {
+  background: blue;
+}
+
+.dot:last-of-type {
+  background: red;
+}
+
+.dot.active {
+  background-color: greenyellow;
+}
