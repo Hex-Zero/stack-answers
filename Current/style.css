@@ -4,6 +4,76 @@
   padding: 0;
 }
 
+.text-background {
+  width: calc(100% - 15rem);
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  background-image: Linear-gradient(
+    transparent 0%,
+    rgba(102, 51, 153, 0.924) 10%,
+    rgba(102, 51, 153, 0.931) 90%,
+    transparent 100%
+  );
+  z-index: 0;
+}
+
 body {
-  background: antiquewhite;
+  background-image: black;
+  background-position: center center;
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-attachment: fixed;
+  color: #fff;
+}
+
+nav {
+  background: rgba(0, 0, 0, 0.616);
+  width: 100%;
+  position: fixed;
+  top: 0;
+  height: 6rem;
+  z-index: 4;
+}
+
+section {
+  position: absolute;
+  padding: 3rem 15rem;
+  background-image: Linear-gradient(
+    transparent 3%,
+    #fff 30%,
+    #fff 70%,
+    transparent 90%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  background-attachment: fixed;
+  scroll-behavior: auto;
+  z-index: 3;
+}
+
+section > p {
+  margin-top: 17rem;
+  color: transparent;
+}
+
+canvas {
+  width: 100%;
+  background-color: rebeccapurple;
+  position: fixed;
+  top: 0;
+  z-index: -1;
+}
+
+footer {
+  position: fixed;
+  width: 100%;
+  height: 1rem;
+  background: rebeccapurple;
+  z-index: 1;
+  bottom: 0;
+}
+
+p {
+  font-size: 3rem;
 }
