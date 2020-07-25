@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      nav {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        height: 7rem;
+        background-color: rgba(102, 51, 153, 0.712);
+        z-index: 4;
+      }
+      section {
+        margin: 5%;
+        width: 90%;
+        height: 388vh;
+        background-color: transparent;
+        color: white;
+        z-index: 2;
+      }
+
+      iframe {
+        position: fixed;
+        left: 5%;
+        width: 90%;
+        height: 90vh;
+        top: 7rem;
+        background-color: gray;
+        z-index: 1;
+      }
+      #section-faded-background {
+        position: absolute;
+        width: 90%;
+        height: 90vh;
+        top: 7rem;
+        left: 5%;
+        background: linear-gradient(
+          0deg,
+          rgb(0, 0, 0) 0%,
+          rgba(8, 0, 77, 0) 50%,
+          rgb(0, 0, 0) 100%
+        );
+        z-index: 1;
+      }
+      canvas {
+        width: 100%;
+        height: 100vh;
+        background-color: rgb(34, 23, 23);
+        position: fixed;
+        top: 0;
+        z-index: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <nav></nav>
+
+    <!-- <div id="section-faded-background"></div> -->
+    <iframe></iframe>
+    <canvas></canvas>
+  </body>
+  <script
+    src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs="
+    crossorigin="anonymous"
+  ></script>
+  <script defer>
+    let returnedParagraphs = getParagrapsh();
+    $(document).ready(function (e) {
+      $("iframe").contents().find("head").append(
+        `<style>
+  body {
+    background-position: center center;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-attachment: fixed;
+    color: #fff;
+    background-image: linear-gradient(
+      0deg,
+      rgb(255, 1, 1) 0%,
+      rgb(15, 4, 112) 50%,
+      rgb(2, 0, 126) 100%
+    );
+  }
+
+  section {
+    background-image: Linear-gradient(
+      transparent 10%,
+      #fff 30%,
+      #fff 70%,
+      transparent 90%
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    background-attachment: false;
+  }
+
+  section > * {
+    color: transparent;
+  }
+</style>`
+      );
+
+      $("iframe").contents().find("body").append(
+        `
+         <section>
+            ${returnedParagraphs}
+         </section>`
+      );
+    });
+
+    function getParagrapsh() {
+      let paragraphs = "";
+      for (let i = 0; i < 299; i++) {
+        for (let i = 0; i < 299; i++) {
+          paragraphs += `<p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima
+        laboriosam necessitatibus quasi incidunt, itaque quod debitis, minus,
+        nostrum dignissimos deleniti aut nobis ab laudantium ad omnis hic? At,
+        debitis fugiat?
+        </p>`;
+        }
+        return paragraphs;
+      }
+    }
+  </script>
+</html>
