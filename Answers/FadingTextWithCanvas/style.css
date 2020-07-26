@@ -40,8 +40,8 @@ section {
   position: absolute;
   padding: 3rem 15rem;
   background-image: Linear-gradient(
-    transparent 3%,
-    #fff 30%,
+    transparent 6rem,
+    #fff 6rem,
     #fff 70%,
     transparent 90%
   );
