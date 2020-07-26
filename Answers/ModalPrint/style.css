@@ -1,0 +1,8 @@
+body {
+  background: antiquewhite;
+}
+
+.modal-body-wrapper {
+  overflow-y: scroll;
+  height: 60vh;
+}
