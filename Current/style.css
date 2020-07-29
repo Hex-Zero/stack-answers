@@ -7,3 +7,16 @@
 body {
   background: antiquewhite;
 }
+
+header {
+  background: orange;
+  height: 5rem;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  height: 3rem;
+  width: 100%;
+  background: orangered;
+}
