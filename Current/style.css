@@ -5,18 +5,32 @@
 }
 
 body {
-  background: antiquewhite;
+  background: whitesmoke;
 }
 
 header {
-  background: orange;
-  height: 5rem;
+  background: rebeccapurple;
+  height: 3rem;
 }
 
 footer {
-  position: absolute;
-  bottom: 0;
-  height: 3rem;
+  height: 1rem;
   width: 100%;
-  background: orangered;
+  background: rgb(30, 14, 46);
+  color: magenta;
+  overflow: hidden;
+  font-size: 0.5rem;
+  padding: 0.25rem 1rem;
+}
+
+span {
+  float: right;
+  user-select: none;
+}
+
+section {
+  margin: 1rem;
+  padding: 1rem;
+  min-height: calc(100vh - 6rem);
+  background-color: antiquewhite;
 }
