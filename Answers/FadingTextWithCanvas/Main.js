@@ -54,7 +54,3 @@ window.addEventListener("resize", function () {
   canvas.height = this.innerHeight;
   init();
 });
-
-function redifectFocusToIfram() {
-  document.getElementById("main-content-iframe").focus();
-}

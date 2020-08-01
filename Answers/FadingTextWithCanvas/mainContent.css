@@ -1,0 +1,22 @@
+body {
+  position: absolute;
+  overflow-x: hidden;
+  margin-top: 2rem;
+  color: aliceblue;
+  width: 80vw;
+  left: 5vw;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+p {
+  padding: 2rem;
+  font-size: 2rem;
+}
