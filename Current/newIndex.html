@@ -1,0 +1,98 @@
+<html class="">
+  <head>
+    <style>
+      body {
+        background: -webkit-linear-gradient(
+          left,
+          #ff0000 0%,
+          #3aff30 25%,
+          #f600ff 50%,
+          #faff00 75%,
+          #0800ff 100%
+        );
+        background: linear-gradient(
+          to right,
+          #ff0000 0%,
+          #3aff30 25%,
+          #f600ff 50%,
+          #faff00 75%,
+          #0800ff 100%
+        );
+      }
+
+      iframe {
+        width: 50%;
+        height: 500px;
+        margin: 0 25%;
+        background-image: linear-gradient(
+          to right,
+          #ff0000 0%,
+          #3aff30 25%,
+          #f600ff 50%,
+          #faff00 75%,
+          #0800ff 100%
+        );
+        border: 0;
+        color: black;
+      }
+      iframe.transparent {
+        opacity: 0.5;
+      }
+      iframe.control html body {
+        background-color: rgba(255, 0, 0, 0.5);
+      }
+
+      p {
+        font-size: 20px;
+        color: white;
+        background-color: rgba(0, 0, 0, 0.5);
+        padding: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <p>
+      Case 1: iframe is set to a certain opacity. No good; everything is
+      affected.
+    </p>
+
+    <iframe
+      class="transparent"
+      src="https://rawgit.com/BrendanBerkley/63143004697adff9d69c/raw/9cc3e0ca7076ba4ff2109cd6ab00a64c10beb34d/test-background-solid.html"
+    >
+    </iframe>
+
+    <p>
+      Case 2: background color inside iframe is set to something transparent.
+      This works - if you're able to control the iframe content that way.
+    </p>
+
+    <iframe
+      src="https://rawgit.com/BrendanBerkley/f5e4790ed89697101c0b/raw/4ec04be0a50a5bdd9a34c68875fc766ac0d0800b/test-background.html"
+    >
+    </iframe>
+
+    <p>
+      Case 3: trying to control the iframe background from the parent. I don't
+      think this is possible with CSS, so I had to do it with JavaScript. It
+      works, but you might run into same-origin problems.
+    </p>
+
+    <iframe
+      id="control"
+      src="https://rawgit.com/BrendanBerkley/63143004697adff9d69c/raw/9cc3e0ca7076ba4ff2109cd6ab00a64c10beb34d/test-background-solid.html"
+    >
+    </iframe>
+
+    <script src="//assets.codepen.io/assets/common/stopExecutionOnTimeout.js?t=1"></script>
+    <script>
+      var frame = document.getElementById("control");
+      frame.onload = function () {
+        frame.contentDocument.body.setAttribute(
+          "style",
+          "background-color: rgba(0,0,0,0.5);"
+        );
+      };
+    </script>
+  </body>
+</html>

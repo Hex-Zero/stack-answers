@@ -4,26 +4,28 @@
   padding: 0;
 }
 
-.text-background {
-  width: calc(100% - 15rem);
-  height: 100vh;
-  position: fixed;
-  top: 0;
-  background-image: Linear-gradient(
-    transparent 0%,
-    rgba(102, 51, 153, 0.924) 10%,
-    rgba(102, 51, 153, 0.931) 90%,
-    transparent 100%
+iframe {
+  position: absolute;
+  top: 5rem;
+  width: 100vw;
+  height: calc(100vh - 6rem);
+  border: none;
+  -webkit-mask-image: linear-gradient(
+    transparent 1rem,
+    #fff 5%,
+    #fff 70%,
+    transparent 90%
   );
-  z-index: 0;
+  mask-image: linear-gradient(
+    transparent 1rem,
+    #fff 5%,
+    #fff 70%,
+    transparent 90%
+  );
 }
 
 body {
   background-image: black;
-  background-position: center center;
-  -webkit-background-size: cover;
-  background-size: cover;
-  background-attachment: fixed;
   color: #fff;
 }
 
@@ -34,27 +36,6 @@ nav {
   top: 0;
   height: 6rem;
   z-index: 4;
-}
-
-section {
-  position: absolute;
-  padding: 3rem 15rem;
-  background-image: Linear-gradient(
-    transparent 6rem,
-    #fff 6rem,
-    #fff 70%,
-    transparent 90%
-  );
-  -webkit-background-clip: text;
-  background-clip: text;
-  background-attachment: fixed;
-  scroll-behavior: auto;
-  z-index: 3;
-}
-
-section > p {
-  margin-top: 17rem;
-  color: transparent;
 }
 
 canvas {
@@ -74,6 +55,12 @@ footer {
   bottom: 0;
 }
 
-p {
-  font-size: 3rem;
+iframe::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+iframe {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
 }
