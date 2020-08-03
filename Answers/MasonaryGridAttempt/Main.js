@@ -24,3 +24,10 @@ function isSmaller(i, evenCol) {
   //     return "smaller";
   //   }
 }
+
+const itemList = [];
+stateList.forEach((element) => {
+  element.name.forEach((state) => {
+    itemList.push(state);
+  });
+});

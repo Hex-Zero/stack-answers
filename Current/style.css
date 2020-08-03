@@ -29,8 +29,8 @@ span {
 }
 
 section {
-  margin: 1rem;
+  margin-left: calc(10vw - 10rem);
   padding: 1rem;
-  min-height: calc(100vh - 6rem);
+  width: calc(80vw / -1 * 0.5);
   background-color: antiquewhite;
 }
