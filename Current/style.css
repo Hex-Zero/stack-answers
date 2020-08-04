@@ -29,8 +29,24 @@ span {
 }
 
 section {
-  margin-left: calc(10vw - 10rem);
+  height: calc(100vh - 4rem);
   padding: 1rem;
-  width: calc(80vw / -1 * 0.5);
   background-color: antiquewhite;
+}
+
+td > .rows {
+  border: 1px solid gray;
+  width: 10vw;
+  padding: 3rem;
+}
+
+td {
+  position: relative;
+}
+
+td > .rows::before {
+  content: attr(data-before);
+  position: absolute;
+  left: -100px;
+  top: 50px;
 }
