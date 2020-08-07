@@ -33,14 +33,3 @@ section {
   padding: 1rem;
   background-color: antiquewhite;
 }
-
-td > .rows {
-  border: 1px solid gray;
-  width: 8rem;
-  padding: 3rem;
-  background: whitesmoke;
-}
-
-td {
-  position: relative;
-}
