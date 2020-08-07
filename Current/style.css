@@ -1,24 +1,35 @@
-@media screen and (max-width: 993px) {
-  #menu-icon {
-    display: inline-block !important;
-    float: right !important;
-    font-size: 70px;
-    padding-top: 60px;
-    padding-right: 15px;
-  }
-
-  .nav-row1 {
-    display: none;
-  }
-
-  #nav-toggle a {
-    width: 100%;
-    display: block;
-  }
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-@media screen and (min-width: 993px) {
-  .nav-row1 {
-    display: inline-block !important;
-  }
+body {
+  background: whitesmoke;
+}
+
+header {
+  background: rebeccapurple;
+  height: 3rem;
+}
+
+footer {
+  height: 1rem;
+  width: 100%;
+  background: rgb(30, 14, 46);
+  color: magenta;
+  overflow: hidden;
+  font-size: 0.5rem;
+  padding: 0.25rem 1rem;
+}
+
+span {
+  float: right;
+  user-select: none;
+}
+
+section {
+  min-height: calc(100vh - 4rem);
+  padding: 1rem;
+  background-color: antiquewhite;
 }
