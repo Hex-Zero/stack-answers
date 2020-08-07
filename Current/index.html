@@ -1,0 +1,87 @@
+
+                        <button class="profile__edit-button" type="button"></button>
+         
+
+                        <button class="profile__add-button" type="button">press </button>
+                   </section>
+        
+        
+        
+        
+        
+        
+        
+                    <section class="elements" aria-label="гриды">
+                        <ul class="element-grid"></ul>
+                    </section>
+                </main>
+        
+                <footer class="footer">
+                    <p class="footer__copyright">&copy; 2020 Mesto Russia</p>
+                </footer>
+        
+                <section class="popup edit-popup" aria-label="попап">
+                    <div class="popup__container">
+                        <p class="popup__title">Редактировать профиль</p>
+        
+                        <form class="popup__form">
+                            <input type="text" class="popup__input" id="nameinput">
+                            <input type="text" class="popup__input" id="jobinput">
+                            <button type="submit" class="popup__save-button">Сохранить</button>
+                        </form>
+        
+                        <button class="popup__close-button" type="button"></button>
+                    </div>
+                </section>
+        
+        
+                <template id="grid-template">
+                    <li class="element-grid__element">
+                      <img class=" element-grid__photo" alt="">
+                                
+                      <div class="element-grid__text-block">
+                        <h2 class=" element-grid__text"></h2>
+                
+                        <button class="element-grid__delete-button" type="button" ></button>
+                        <button class="element-grid__like-button" type="button" ></button>
+                      </div>
+                    </li>
+                  </template>
+        
+        
+        
+                <section class="popup add-popup" aria-label="попап">
+                    <div class="popup__container">
+                        <p class="popup__title">New place</p>
+        
+                        <form action="#" name="addpopupform" class="popup__form" method="POST" novalidate>
+                            <input type="text" name="place-name" class="popup__input" id="placeinput" placeholder="namе" required minlength="2" maxlength="30" autocomplete="off">
+                            <p class="popup__input-error-message" id="place-name-error"></p>
+                            <input type="url" name="link-name" class="popup__input" id="linkinput" placeholder="image-link">
+                            <p class="popup__input-error-message" id="place-link-error"></p>
+                            <button type="submit" class="popup__save-button popup__save-button_disabled" disabled>Загрузить</button>
+                        </form>
+        
+                        <button class="popup__close-button" disabled type="button"></button>
+                    </div>
+                </section>
+        
+                <section class="popup-image popup " aria-label="попап">
+                    <div class="popup-image__container">
+                        <div class="popup-image__picture">
+                            <img alt="" class="popup-image__image" src="#">
+                            <div class="popup-image__text"></div>
+                        </div>
+        
+                        <button class="popup-image__close-button" type="button"></button>
+                    </div>
+                </section>
+            </div>
+        
+        
+        
+            <script src="./js/script.js"></script>
+        
+        </body>
+        
+        </html>
