@@ -33,3 +33,9 @@ section {
   padding: 1rem;
   background-color: antiquewhite;
 }
+
+.colour-return {
+  background-color: yellow;
+  width: 4rem;
+  height: 4rem;
+}
