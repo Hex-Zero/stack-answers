@@ -33,3 +33,16 @@ section {
   padding: 1rem;
   background-color: antiquewhite;
 }
+
+.message-box {
+  margin-top: 10rem;
+  background-color: aliceblue;
+  width: 29rem;
+  height: 19rem;
+  transition: height 2s ease-in-out, margin 2s ease-in-out;
+}
+
+.extend-box-up {
+  margin-top: -2rem;
+  height: 29rem;
+}
