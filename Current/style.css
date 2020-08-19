@@ -9,7 +9,7 @@ body {
 }
 
 header {
-  background: rgb(153, 51, 51);
+  background: rebeccapurple;
   height: 3rem;
 }
 
@@ -17,7 +17,7 @@ footer {
   height: 1rem;
   width: 100%;
   background: rgb(30, 14, 46);
-  color: rgb(0, 17, 255);
+  color: magenta;
   overflow: hidden;
   font-size: 0.5rem;
   padding: 0.25rem 1rem;
@@ -32,17 +32,4 @@ section {
   min-height: calc(100vh - 4rem);
   padding: 1rem;
   background-color: antiquewhite;
-}
-
-.message-box {
-  margin-top: 10rem;
-  background-color: aliceblue;
-  width: 29rem;
-  height: 19rem;
-  transition: height 2s ease-in-out, margin 2s ease-in-out;
-}
-
-.extend-box-up {
-  margin-top: -2rem;
-  height: 29rem;
 }
