@@ -8,7 +8,7 @@ footer {
   width: 100%;
   background: rgb(30, 14, 46);
   color: magenta;
-  overflow: hidden;
+  overflow-y: hidden;
   font-size: 0.5rem;
   padding: 0.25rem 1rem;
 }
