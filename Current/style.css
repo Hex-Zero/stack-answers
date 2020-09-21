@@ -23,6 +23,13 @@ footer {
   padding: 0.25rem 1rem;
 }
 
+#display-presssed-button {
+  height: 3rem;
+  width: 7rem;
+  background-color: white;
+  font-weight: 800;
+}
+
 span {
   float: right;
   user-select: none;
