@@ -23,8 +23,8 @@ footer {
   padding: 0.25rem 1rem;
 }
 
-.display-presssed-button {
-  font-size: 11px;
+.display-presssed-button {h
+  font-size: 10px;
   padding: 0.7rem 1rem;
   font-weight: 800;
   display: flex;
@@ -43,7 +43,7 @@ footer {
 
 span {
   float: right;
-  user-select: none;
+  user-select: none;s
 }
 
 section {
