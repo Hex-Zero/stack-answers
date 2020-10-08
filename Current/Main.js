@@ -10,7 +10,7 @@ function createButton(e) {
     e.code === "Space" ? e.code.toUpperCase() : e.key.toUpperCase();
   buttonBody.appendChild(buttonText);
   seciton.appendChild(buttonBody);
-  setTimeout(() => buttonBody.remove(), 1000);
+  setTimeout(() => buttonBody.remove(), 100);
 }
 
 const targetHtml = document.documentElement;
