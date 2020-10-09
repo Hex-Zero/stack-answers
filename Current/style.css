@@ -43,11 +43,11 @@ footer {
 
 span {
   float: right;
-  user-select: none;s
+  user-select: none;
 }
 
 section {
   min-height: calc(100vh - 4rem);
   padding: 1rem;
-  background-color: antiquewhite;
+  background-color: white;
 }
