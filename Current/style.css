@@ -27,7 +27,7 @@ footer {
   font-size: 10px;
   padding: 0.7rem 1rem;
   font-weight: 800;
-  display: block;
+  display: flex;
   align-items: center;
   color: rgb(32, 32, 32);
 }
