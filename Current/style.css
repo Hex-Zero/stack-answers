@@ -33,11 +33,11 @@ footer {
 }
 
 .button-body {
-  background-color: white;
+  background-color: hsl(0deg 0% 97% / 68%);
   display: inline-block;
   margin: 0.3rem;
-  box-shadow: inset 0px 0px 2px 1px rgb(216, 216, 216),
-    1px 2px 2px 1px rgb(190, 190, 190);
+  box-shadow: inset 0px 0px 1px 0px rgb(0 0 0),
+    inset 0px 0px 4px 4px rgb(255 255 255), 1px 2px 2px 1px rgb(160 158 158);
   border-radius: 6%;
 }
 
