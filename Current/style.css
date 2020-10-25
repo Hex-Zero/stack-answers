@@ -20,7 +20,7 @@ footer {
   color: magenta;
   overflow: hidden;
   font-size: 0.5rem;
-  padding: 0.25rem 1rem;
+  padding: 0.25rem .5rem;
 }
 
 .display-presssed-button {
